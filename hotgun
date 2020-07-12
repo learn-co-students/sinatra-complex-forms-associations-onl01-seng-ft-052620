@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /mnt/c/users/shark/dev/flatiron/labs/sinatra-complex-forms-associations-onl01-seng-ft-052620/app/controllers/owners_controller.rb @ line 34 self.PATCH /owners/:id:
+
+    [1;34m29[0m:     @owner = [1;34;4mOwner[0m.find(params[[33m:id[0m])
+    [1;34m30[0m:     erb [33m:[1;33m'[0m[33m/owners/show[1;33m'[0m[33m[0m
+    [1;34m31[0m:   [32mend[0m
+    [1;34m32[0m: 
+    [1;34m33[0m:   patch [31m[1;31m'[0m[31m/owners/:id[1;31m'[0m[31m[0m [32mdo[0m 
+ => [1;34m34[0m:     binding.pry
+    [1;34m35[0m:     [32mif[0m !params[[33m:owner[0m].keys.include?([31m[1;31m"[0m[31mpet_ids[1;31m"[0m[31m[0m)
+    [1;34m36[0m:       params[[33m:owner[0m][[31m[1;31m"[0m[31mpet_ids[1;31m"[0m[31m[0m] = []
+    [1;34m37[0m:     [32mend[0m 
+    [1;34m38[0m:     @owner = [1;34;4mOwner[0m.find(params[[33m:id[0m])
+    [1;34m39[0m:     @owner.update(params[[33m:owner[0m])
+
